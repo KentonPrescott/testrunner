@@ -9,7 +9,7 @@ export default {
     const dai = maker.getToken(DAI);
     await dai.approveUnlimited(proxy);
 
-    await cdp.wipeDai(50);
+    await cdp.wipeDai(100);
 
     return cdp;
   },

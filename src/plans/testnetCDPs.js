@@ -8,50 +8,50 @@ export default {
     user5: 'testAccounts'
   },
   actions: [
-    ['user1', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]],
+    ['user1', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]],
     [
       'user1',
-      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(2.5), dai: 100 }]]
     ],
     [
       'user1',
-      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(2.5), dai: 100 }]]
     ],
-    ['user2', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]],
+    ['user2', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]],
     [
       'user2',
-      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
     [
       'user2',
-      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
-    ['user3', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]],
+    ['user3', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]],
     [
       'user3',
-      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
     [
       'user3',
-      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
-    ['user4', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]],
+    ['user4', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]],
     [
       'user4',
-      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
     [
       'user4',
-      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
-    ['user5', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]],
+    ['user5', [['cdpOpen', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]],
     [
       'user5',
-      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenAndBite', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ],
     [
       'user5',
-      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(0.5), dai: 20 }]]
+      [['cdpOpenUnsafe', { ilk: 'ETH-A', collateral: ETH(2), dai: 100 }]]
     ]
   ]
 };

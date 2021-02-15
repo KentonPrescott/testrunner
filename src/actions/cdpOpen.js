@@ -2,8 +2,8 @@ import { ETH, DAI } from '@makerdao/dai-plugin-mcd';
 export default {
   before: (_, { config }) => {
     config.ilk = config.ilk ? config.ilk : 'ETH-A';
-    config.collateral = config.collateral ? config.collateral : ETH(1);
-    config.dai = config.dai ? config.dai : 20;
+    config.collateral = config.collateral ? config.collateral : ETH(2);
+    config.dai = config.dai ? config.dai : 100;
     return true;
   },
   operation: async (user, { maker, config }) => {

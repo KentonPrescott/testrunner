@@ -8,7 +8,7 @@ export default {
 
     await maker
       .service('mcd:cdpManager')
-      .lockAndDraw(cdp.id, cdp.ilk, ETH(0), DAI(50));
+      .lockAndDraw(cdp.id, cdp.ilk, ETH(0), DAI(100));
 
     return cdp;
   },

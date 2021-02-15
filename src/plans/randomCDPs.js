@@ -11,11 +11,11 @@ export default {
     [['user1', 'user2', 'user3'], 'cdpOpenRandom'],
     [
       ['user4', 'user5'],
-      [['cdpOpenAndBite', { collateral: ETH(1), ilk: 'ETH-A' }]]
+      [['cdpOpenAndBite', { collateral: ETH(2), ilk: 'ETH-A' }]]
     ],
     [
       ['user1', 'user2', 'user3', 'user4', 'user5'],
-      [['cdpOpenUnsafe', { collateral: ETH(1), ilk: 'ETH-A' }]]
+      [['cdpOpenUnsafe', { collateral: ETH(2), ilk: 'ETH-A' }]]
     ]
   ]
 };

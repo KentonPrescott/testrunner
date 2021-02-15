@@ -3,7 +3,7 @@ import { stringToBytes } from '../helpers/utils';
 
 export default {
   precondition: async (user, { maker, config }) => {
-    config.collateral = config.collateral || ETH(1);
+    config.collateral = config.collateral || ETH(2);
     return (await maker
       .service('token')
       .getToken(config.collateral.symbol)
@@ -12,7 +12,7 @@ export default {
   before: (_, { config }) => {
     config.ilk = config && config.ilk ? config.ilk : 'ETH-A';
     config.collateral =
-      config && config.collateral ? config.collateral : ETH(1);
+      config && config.collateral ? config.collateral : ETH(2);
     return true;
   },
   operation: async (user, { maker, config }) => {
@@ -24,7 +24,7 @@ export default {
     //open CDP
     const cdp = await maker
       .service('mcd:cdpManager')
-      .openLockAndDraw(config.ilk, config.collateral, DAI(20));
+      .openLockAndDraw(config.ilk, config.collateral, DAI(100));
     cdp.reset();
     cdp.type.reset();
     await cdp.prefetch();

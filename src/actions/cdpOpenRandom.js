@@ -4,7 +4,7 @@ export default {
   before: (_, { config, rng }) => {
     config.ilk = config.ilk ? config.ilk : 'ETH-A';
     config.collateral = config.collateral ? config.collateral : ETH(rng.rng());
-    config.dai = config.dai ? config.dai : 20 + rng.rng() * 10;
+    config.dai = config.dai ? config.dai : 100 + rng.rng() * 10;
     return true;
   },
   operation: async (user, { maker, config }) => {
